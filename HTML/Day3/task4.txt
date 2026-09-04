@@ -1,0 +1,54 @@
+Task 4 — Challenge Answer 
+
+1. Block-level elements
+
+These generally start on a new line and occupy the available width.
+
+<header>
+<nav>
+<main>
+<section>
+<article>
+<footer>
+<h1>
+<h2>
+<h3>
+<p>
+<ul>
+<li>
+
+
+2. Inline elements
+
+These occupy only the space required by their content.
+
+<strong>
+<span>
+<a>
+
+For example:
+
+<strong>Price:</strong>
+<span>₹55,000</span>
+
+
+3. Semantic elements
+
+Semantic elements clearly describe their purpose.
+
+<header>
+<nav>
+<main>
+<section>
+<article>
+<footer>
+
+They tell the browser and developer what the content represents.
+
+4. Non-semantic elements
+
+The common non-semantic element is:
+
+<div>
+
+It is a generic container and does not describe the meaning of its content.

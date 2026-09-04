@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apollo Hospital Patient Registration</title>
+
+<body>
+<center>
+    <h1>Apollo Hospital</h1>
+    <h2>Patient Registration Form</h2>
+
+    <form>
+
+        <label>Patient ID</label>
+        <input type="text" name="patientid" required><br><br>
+        
+        <label>Patient Name</label>
+        <input type="text" name="patientname" required><br><br>
+
+        <label>Age</label>
+        <input type="number" name="age" required><br><br>
+
+        <label>Gender</label>
+        <input type="radio" name="gender" value="Male"> Male 
+        <input type="radio" name="gender" value="Female"> Female 
+        <input type="radio" name="gender" value="Other"> Other <br><br>
+
+        <label>Blood Group</label>
+        <select name="bloodgroup">
+            <option>--Select Blood Group--</option>
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+            <option>O+</option>
+            <option>O-</option>
+        </select><br><br>
+
+        <label>Doctor</label>
+        <select name="doctor">
+            <option>--Select Doctor--</option>
+            <option>Dr. Rajesh</option>
+            <option>Dr. Priya</option>
+            <option>Dr. Kumar</option>
+            <option>Dr. Meena</option>
+        </select><br><br>
+
+        <label>Appointment Date</label>
+        <input type="date" name="appointment"><br><br>
+
+        <label>Symptoms</label>
+        <textarea rows="4" placeholder="Describe symptoms"></textarea><br><br>
+
+        <label>Medical Report Upload</label>
+        <input type="file"><br><br>
+
+        <input type="submit" value="Register"><br><br>
+        <input type="reset" value="Clear"><br><br>
+
+    </form>
+
+    <h2>Patient Report</h2>
+
+    <table border="5">
+        <tr>
+            <th>Patient ID</th>
+            <th>Patient Name</th>
+            <th>Doctor</th>
+            <th>Blood Group</th>
+            <th>Appointment Date</th>
+            <th>Status</th>
+        </tr>
+
+        <tr>
+            <td>P101</td>
+            <td>Arun Kumar</td>
+            <td>Dr. Rajesh</td>
+            <td>O+</td>
+            <td>20-07-2026</td>
+            <td>Confirmed</td>
+        </tr>
+
+        <tr>
+            <td>P102</td>
+            <td>Priya Sharma</td>
+            <td>Dr. Meena</td>
+            <td>A+</td>
+            <td>21-07-2026</td>
+            <td>Pending</td>
+        </tr>
+
+        <tr>
+            <td>P103</td>
+            <td>Rahul Singh</td>
+            <td>Dr. Kumar</td>
+            <td>B-</td>
+            <td>22-07-2026</td>
+            <td>Completed</td>
+        </tr>
+
+    </table>
+</center>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration & Employee Report</title>
+</head>
+<body>
+<center>
+    <h1>ABC Software Company - Employee Registration</h1>
+
+    <form>
+
+        <label for="empid">Employee ID:</label><br>
+        <input type="text" id="empid" name="empid" required><br><br>
+
+        <label for="empname">Employee Name:</label><br>
+        <input type="text" id="empname" name="empname" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="mobile">Mobile:</label><br>
+        <input type="tel" id="mobile" name="mobile" required><br><br>
+
+        <label for="department">Department:</label><br>
+        <select id="department" name="department">
+            <option value="">--Select Department--</option>
+            <option>Software Development</option>
+            <option>Testing</option>
+            <option>HR</option>
+            <option>Marketing</option>
+            <option>Support</option>
+        </select><br><br>
+
+        <label for="experience">Experience (Years):</label><br>
+        <input type="number" id="experience" name="experience"><br><br>
+
+        <label for="salary">Salary:</label><br>
+        <input type="number" id="salary" name="salary"><br><br>
+
+        <label>Skills:</label><br>
+        <input type="checkbox" id="java" name="skills" value="Java">
+        <label for="java">Java</label>
+
+        <input type="checkbox" id="python" name="skills" value="Python">
+        <label for="python">Python</label>
+
+        <input type="checkbox" id="html" name="skills" value="HTML">
+        <label for="html">HTML</label>
+
+        <input type="checkbox" id="sql" name="skills" value="SQL">
+        <label for="sql">SQL</label>
+        <br><br>
+
+        <label for="resume">Resume Upload:</label><br>
+        <input type="file" id="resume" name="resume"><br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+    <hr>
+
+    <h2>Employee Report</h2>
+
+    <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Employee ID</th>
+                <th>Employee Name</th>
+                <th>Department</th>
+                <th>Experience</th>
+                <th>Salary</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>EMP101</td>
+                <td>Rahul Kumar</td>
+                <td>Software Development</td>
+                <td>3 Years</td>
+                <td>₹45,000</td>
+                <td>Selected</td>
+            </tr>
+
+            <tr>
+                <td>EMP102</td>
+                <td>Priya Sharma</td>
+                <td>Testing</td>
+                <td>2 Years</td>
+                <td>₹38,000</td>
+                <td>Interview</td>
+            </tr>
+
+            <tr>
+                <td>EMP103</td>
+                <td>Arun Raj</td>
+                <td>HR</td>
+                <td>5 Years</td>
+                <td>₹55,000</td>
+                <td>Selected</td>
+            </tr>
+        </tbody>
+    </table>
+</center>
+</body>
+</html>

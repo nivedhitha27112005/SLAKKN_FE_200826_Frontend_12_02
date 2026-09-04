@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics Shop Inventory System</title>
+</head>
+<body>
+<center>
+<h1>Electronics Shop Inventory System</h1>
+
+<h2>Product Registration Form</h2>
+
+<form>
+
+    <label>Product ID</label>
+    <input type="text" name="productid" required><br><br>
+
+    <label>Product Name</label>
+    <input type="text" name="productname" required><br><br>
+
+    <label>Brand</label>
+    <input type="text" name="brand" required><br><br>
+
+    <label>Category</label>
+    <select name="category">
+        <option>--Select Category--</option>
+        <option>Mobile</option>
+        <option>Laptop</option>
+        <option>Television</option>
+        <option>Refrigerator</option>
+        <option>Washing Machine</option>
+        <option>Accessories</option>
+    </select><br><br>
+
+    <label>Price</label>
+    <input type="number" name="price" required><br><br>
+
+    <label>Quantity</label>
+    <input type="number" name="quantity" required><br><br>
+
+    <label>Supplier</label>
+    <input type="text" name="supplier" required><br><br>
+
+    <label>Product Image</label>
+    <input type="file"><br><br>
+
+    <input type="submit" value="Register"><br><br>
+    <input type="reset" value="Clear"><br><br>
+
+</form>
+<hr>
+<h2>Inventory Report</h2>
+
+<table border="5">
+    <tr>
+        <th>Product ID</th>
+        <th>Product Name</th>
+        <th>Brand</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Stock Status</th>
+    </tr>
+
+    <tr>
+        <td>P101</td>
+        <td>Galaxy S25</td>
+        <td>Samsung</td>
+        <td>₹75,000</td>
+        <td>20</td>
+        <td>In Stock</td>
+    </tr>
+
+    <tr>
+        <td>P102</td>
+        <td>Inspiron 15</td>
+        <td>Dell</td>
+        <td>₹60,000</td>
+        <td>8</td>
+        <td>Low Stock</td>
+    </tr>
+
+    <tr>
+        <td>P103</td>
+        <td>Smart TV</td>
+        <td>Sony</td>
+        <td>₹55,000</td>
+        <td>0</td>
+        <td>Out of Stock</td>
+    </tr>
+
+</table>
+</center>
+</body>
+</html>

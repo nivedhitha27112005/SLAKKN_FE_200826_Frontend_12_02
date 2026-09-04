@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+        <center>
+            <h1>SLA Institute - Student Registration Form</h1>
+
+            <form>
+
+                <label for="name">Student Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" name="mobile"><br><br>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age"><br><br>
+
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+
+                <input type="radio" id="other" name="gender" value="Other">
+                <label for="other">Other</label>
+                <br><br>
+
+                <label>Skills:</label>
+                <input type="checkbox" id="html" name="skills" value="HTML">
+                <label for="html">HTML</label>
+
+                <input type="checkbox" id="css" name="skills" value="CSS">
+                <label for="css">CSS</label>
+
+                <input type="checkbox" id="js" name="skills" value="JavaScript">
+                <label for="js">JavaScript</label>
+                <br><br>
+
+                <label for="course">Course Selection:</label>
+                <select id="course" name="course">
+                    <option value="">--Select Course--</option>
+                    <option value="Full Stack Development">Full Stack Development</option>
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                    <option value="Data Science">Data Science</option>
+                </select>
+                <br><br>
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="4" cols="40"></textarea>
+                <br><br>
+
+                <label for="image">Profile Image:</label>
+                <input type="file" id="image" name="image">
+                <br><br>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+        </center>
+    </form>
+
+    <hr>
+
+    <h2>Student Details</h2>
+
+    <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+            <tr>
+                <th>SLA ID</th>
+                <th>Student Name</th>
+                <th>Course</th>
+                <th>Email</th>
+                <th>Mobile Number</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>SLA001</td>
+                <td>Rahul Kumar</td>
+                <td>Full Stack Development</td>
+                <td>rahul@gmail.com</td>
+                <td>9876543210</td>
+                <td>Active</td>
+            </tr>
+
+            <tr>
+                <td>SLA002</td>
+                <td>Priya Sharma</td>
+                <td>Python</td>
+                <td>priya@gmail.com</td>
+                <td>9123456789</td>
+                <td>Active</td>
+            </tr>
+
+            <tr>
+                <td>SLA003</td>
+                <td>Arun Raj</td>
+                <td>Java</td>
+                <td>arun@gmail.com</td>
+                <td>9988776655</td>
+                <td>Pending</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
