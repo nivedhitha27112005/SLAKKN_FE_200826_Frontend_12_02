@@ -1,0 +1,38 @@
+button {
+    color: white;
+    padding: 12px 25px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.login {
+    background-color: rgb(35, 158, 121);
+}
+
+.register {
+    background-color: rgb(74, 202, 74);
+}
+
+.contact {
+    background-color: rgb(207, 82, 19);
+}
+
+.login:hover {
+    background-color: white;
+    color: rgb(16, 16, 214);
+    border: 2px solid rgb(14, 14, 246);
+}
+
+.register:hover {
+    background-color: white;
+    color: rgb(203, 67, 158);
+    border: 2px solid rgb(220, 23, 102);
+}
+
+.contact:hover {
+    background-color: white;
+    color: rgb(236, 163, 26);
+    border: 2px solid rgb(207, 142, 22);
+}
