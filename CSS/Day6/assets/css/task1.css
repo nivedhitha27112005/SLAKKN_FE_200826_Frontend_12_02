@@ -1,0 +1,39 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+.parent {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  background-color: rgb(47, 115, 55);
+  margin: 50px auto;
+}
+
+.child {
+  width: 100px;
+  height: 60px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.child1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(214, 62, 19, 0.485);
+}
+
+.child2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(212, 34, 156);
+}
+
+.child3 {
+  background-color: rgb(217, 96, 20);
+  margin: 10px;
+}
