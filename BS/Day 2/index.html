@@ -1,109 +1,937 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CrickGear</title>
-  <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css"rel="stylesheet"/>
+
+    <!-- Basic HTML Information -->
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="BrewNest Cafe - Fresh Coffee, Bakery and Snacks">
+
+    <meta name="keywords"
+          content="coffee, cafe, bakery, snacks, BrewNest">
+
+    <meta name="author"
+          content="BrewNest Cafe">
+
+    <title>BrewNest Cafe</title>
+
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css"
+        rel="stylesheet">
+
 </head>
+
+
 <body>
 
-  
-  <nav class="navbar navbar-dark bg-dark">
-    <div class="container d-flex justify-content-between align-items-center flex-wrap">
-      <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="assets/images/logo/logo.svg" alt="CrickGear Logo" height="40" class="me-2" />
-        CrickGear
-      </a>
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#">Bats</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#">Balls</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#">Protective Gear</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#contact-form">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
 
-  
-  <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="assets/images/banner/bats.svg" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Cricket Bats" />
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Premium Cricket Bats</h5>
-          <p>Handpicked willow bats for every player.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="assets/images/banner/balls.svg" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Cricket Balls" />
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Match Quality Balls</h5>
-          <p>Leather and tennis balls for every format.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="assets/images/banner/gear.svg" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Protective Gear" />
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Protective Gear</h5>
-          <p>Pads, helmets, and gloves built for safety.</p>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-  </div>
+    <!-- ================================================= -->
+    <!-- NAVIGATION BAR -->
+    <!-- ================================================= -->
 
- 
-  <div class="container my-5" id="contact-form">
-    <h2 class="mb-4 text-center">Enquire About Our Gear</h2>
-    <form class="mx-auto" style="max-width: 500px;">
-      <div class="mb-3">
-        <label for="name" class="form-label">Name</label>
-        <input type="text" class="form-control" id="name" placeholder="Enter your name" />
-      </div>
-      <div class="mb-3">
-        <label for="email" class="form-label">Email</label>
-        <input type="email" class="form-control" id="email" placeholder="Enter your email" />
-      </div>
-      <div class="mb-3">
-        <label for="product" class="form-label">Product Interested In</label>
-        <select class="form-select" id="product">
-          <option selected>Choose an option</option>
-          <option>Cricket Bat</option>
-          <option>Cricket Ball</option>
-          <option>Protective Gear</option>
-          <option>Other</option>
-        </select>
-      </div>
-      <div class="mb-3">
-        <label for="message" class="form-label">Message</label>
-        <textarea class="form-control" id="message" rows="4" placeholder="Your message"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary w-100">Submit</button>
-    </form>
-  </div>
+    <nav class="navbar navbar-dark bg-dark">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+        <div class="container d-flex justify-content-between align-items-center flex-wrap">
+
+
+            <!-- Logo -->
+
+            <a class="navbar-brand d-flex align-items-center"
+               href="#home">
+
+                <img
+                    src="assets/images/logo/logo.png"
+                    alt="BrewNest Cafe Logo"
+                    width="45"
+                    height="45"
+                    class="me-2">
+
+                <strong>
+                    BrewNest
+                </strong>
+
+            </a>
+
+
+            <!-- Navigation Links -->
+
+            <ul class="nav">
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link text-white"
+                        href="#home">
+
+                        Home
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link text-white"
+                        href="#coffee">
+
+                        Coffee
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link text-white"
+                        href="#bakery">
+
+                        Bakery
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link text-white"
+                        href="#special">
+
+                        Offers
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link text-white"
+                        href="#contact">
+
+                        Contact
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- ================================================= -->
+    <!-- BANNER / CAROUSEL -->
+    <!-- ================================================= -->
+
+    <div
+        id="mainCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel">
+
+
+        <!-- Carousel Indicators -->
+
+        <div class="carousel-indicators">
+
+            <button
+                type="button"
+                data-bs-target="#mainCarousel"
+                data-bs-slide-to="0"
+                class="active">
+            </button>
+
+
+            <button
+                type="button"
+                data-bs-target="#mainCarousel"
+                data-bs-slide-to="1">
+            </button>
+
+
+            <button
+                type="button"
+                data-bs-target="#mainCarousel"
+                data-bs-slide-to="2">
+            </button>
+
+        </div>
+
+
+
+        <!-- Carousel Content -->
+
+        <div class="carousel-inner">
+
+
+            <!-- ================= SLIDE 1 ================= -->
+
+            <div class="carousel-item active">
+
+                <img
+                    src="assets/images/banner/coffee.jpg"
+                    class="d-block w-100"
+                    style="height:400px; object-fit:cover;"
+                    alt="Fresh Coffee">
+
+
+                <div class="carousel-caption d-none d-md-block">
+
+                    <h2>
+                        Freshly Brewed Coffee
+                    </h2>
+
+                    <p>
+                        Start your day with the perfect cup of freshly brewed coffee.
+                    </p>
+
+                    <a
+                        href="#coffee"
+                        class="btn btn-primary">
+
+                        Explore Coffee
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= SLIDE 2 ================= -->
+
+            <div class="carousel-item">
+
+                <img
+                    src="assets/images/banner/bakery.jpg"
+                    class="d-block w-100"
+                    style="height:400px; object-fit:cover;"
+                    alt="Fresh Bakery">
+
+
+                <div class="carousel-caption d-none d-md-block">
+
+                    <h2>
+                        Fresh Bakery Delights
+                    </h2>
+
+                    <p>
+                        Enjoy delicious cakes, croissants, cookies and pastries.
+                    </p>
+
+                    <a
+                        href="#bakery"
+                        class="btn btn-primary">
+
+                        View Bakery
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= SLIDE 3 ================= -->
+
+            <div class="carousel-item">
+
+                <img
+                    src="assets/images/banner/cafe.jpg"
+                    class="d-block w-100"
+                    style="height:400px; object-fit:cover;"
+                    alt="Cozy Cafe">
+
+
+                <div class="carousel-caption d-none d-md-block">
+
+                    <h2>
+                        Relax at BrewNest
+                    </h2>
+
+                    <p>
+                        A cozy place for coffee, friends and wonderful moments.
+                    </p>
+
+                    <a
+                        href="#contact"
+                        class="btn btn-primary">
+
+                        Visit Us
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Previous Button -->
+
+        <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#mainCarousel"
+            data-bs-slide="prev">
+
+            <span class="carousel-control-prev-icon">
+            </span>
+
+        </button>
+
+
+
+        <!-- Next Button -->
+
+        <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#mainCarousel"
+            data-bs-slide="next">
+
+            <span class="carousel-control-next-icon">
+            </span>
+
+        </button>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- WELCOME SECTION -->
+    <!-- ================================================= -->
+
+    <div
+        class="container my-5"
+        id="home">
+
+        <div class="text-center">
+
+            <h1>
+                Welcome to BrewNest
+            </h1>
+
+            <p class="lead">
+
+                Your neighborhood café for delicious coffee,
+                fresh bakery items and memorable moments.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- COFFEE SECTION -->
+    <!-- ================================================= -->
+
+    <div
+        class="container my-5"
+        id="coffee">
+
+
+        <h2 class="text-center mb-4">
+
+            Our Popular Coffee
+
+        </h2>
+
+
+        <div class="row">
+
+
+            <!-- Cappuccino -->
+
+            <div class="col-md-4 mb-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img
+                        src="assets/images/products/cappuccino.jpg"
+                        class="card-img-top"
+                        height="220"
+                        style="object-fit:cover;"
+                        alt="Cappuccino">
+
+
+                    <div class="card-body text-center">
+
+                        <h5 class="card-title">
+
+                            Cappuccino
+
+                        </h5>
+
+
+                        <p class="card-text">
+
+                            Rich espresso with steamed milk
+                            and creamy foam.
+
+                        </p>
+
+
+                        <h6>
+                            ₹140
+                        </h6>
+
+
+                        <button class="btn btn-dark">
+
+                            Order Now
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Latte -->
+
+            <div class="col-md-4 mb-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img
+                        src="assets/images/products/latte.jpg"
+                        class="card-img-top"
+                        height="220"
+                        style="object-fit:cover;"
+                        alt="Cafe Latte">
+
+
+                    <div class="card-body text-center">
+
+                        <h5 class="card-title">
+
+                            Cafe Latte
+
+                        </h5>
+
+
+                        <p class="card-text">
+
+                            Smooth espresso blended
+                            with warm steamed milk.
+
+                        </p>
+
+
+                        <h6>
+                            ₹160
+                        </h6>
+
+
+                        <button class="btn btn-dark">
+
+                            Order Now
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Espresso -->
+
+            <div class="col-md-4 mb-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img
+                        src="assets/images/products/espresso.jpg"
+                        class="card-img-top"
+                        height="220"
+                        style="object-fit:cover;"
+                        alt="Espresso">
+
+
+                    <div class="card-body text-center">
+
+                        <h5 class="card-title">
+
+                            Espresso
+
+                        </h5>
+
+
+                        <p class="card-text">
+
+                            Strong and flavorful coffee
+                            for a perfect energy boost.
+
+                        </p>
+
+
+                        <h6>
+                            ₹120
+                        </h6>
+
+
+                        <button class="btn btn-dark">
+
+                            Order Now
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- BAKERY SECTION -->
+    <!-- ================================================= -->
+
+    <div
+        class="container my-5"
+        id="bakery">
+
+
+        <h2 class="text-center mb-4">
+
+            Fresh Bakery
+
+        </h2>
+
+
+        <div class="row">
+
+
+            <!-- Croissant -->
+
+            <div class="col-md-4 mb-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img
+                        src="assets/images/products/croissant.jpg"
+                        class="card-img-top"
+                        height="220"
+                        style="object-fit:cover;"
+                        alt="Butter Croissant">
+
+
+                    <div class="card-body text-center">
+
+                        <h5>
+                            Butter Croissant
+                        </h5>
+
+
+                        <p>
+                            Crispy outside and soft inside.
+                        </p>
+
+
+                        <h6>
+                            ₹100
+                        </h6>
+
+
+                        <button class="btn btn-primary">
+
+                            Buy Now
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Chocolate Cake -->
+
+            <div class="col-md-4 mb-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img
+                        src="assets/images/products/chocolate-cake.jpg"
+                        class="card-img-top"
+                        height="220"
+                        style="object-fit:cover;"
+                        alt="Chocolate Cake">
+
+
+                    <div class="card-body text-center">
+
+                        <h5>
+                            Chocolate Cake
+                        </h5>
+
+
+                        <p>
+                            Rich chocolate cake
+                            for every sweet tooth.
+                        </p>
+
+
+                        <h6>
+                            ₹180
+                        </h6>
+
+
+                        <button class="btn btn-primary">
+
+                            Buy Now
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Donuts -->
+
+            <div class="col-md-4 mb-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img
+                        src="assets/images/products/donuts.jpg"
+                        class="card-img-top"
+                        height="220"
+                        style="object-fit:cover;"
+                        alt="Fresh Donuts">
+
+
+                    <div class="card-body text-center">
+
+                        <h5>
+                            Fresh Donuts
+                        </h5>
+
+
+                        <p>
+                            Soft, sweet and freshly
+                            prepared every morning.
+                        </p>
+
+
+                        <h6>
+                            ₹90
+                        </h6>
+
+
+                        <button class="btn btn-primary">
+
+                            Buy Now
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- SPECIAL OFFER -->
+    <!-- ================================================= -->
+
+    <div
+        class="container my-5"
+        id="special">
+
+
+        <div class="p-5 text-center bg-light rounded shadow-sm">
+
+
+            <h2>
+                ☕ Special Coffee Combo
+            </h2>
+
+
+            <p class="lead">
+
+                Get one Cappuccino + one Fresh Donut
+                at a special combo price.
+
+            </p>
+
+
+            <h3>
+                ₹199
+            </h3>
+
+
+            <button class="btn btn-success">
+
+                Grab the Offer
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- CONTACT FORM -->
+    <!-- ================================================= -->
+
+    <div
+        class="container my-5"
+        id="contact">
+
+
+        <h2 class="text-center mb-4">
+
+            Contact BrewNest
+
+        </h2>
+
+
+        <form
+            class="mx-auto"
+            style="max-width:500px;">
+
+
+            <!-- Name -->
+
+            <div class="mb-3">
+
+                <label
+                    for="name"
+                    class="form-label">
+
+                    Name
+
+                </label>
+
+
+                <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Enter your name"
+                    required>
+
+            </div>
+
+
+
+            <!-- Email -->
+
+            <div class="mb-3">
+
+                <label
+                    for="email"
+                    class="form-label">
+
+                    Email
+
+                </label>
+
+
+                <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Enter your email"
+                    required>
+
+            </div>
+
+
+
+            <!-- Interested In -->
+
+            <div class="mb-3">
+
+                <label
+                    for="product"
+                    class="form-label">
+
+                    Interested In
+
+                </label>
+
+
+                <select
+                    class="form-select"
+                    id="product">
+
+                    <option selected>
+                        Choose an option
+                    </option>
+
+                    <option>
+                        Coffee
+                    </option>
+
+                    <option>
+                        Bakery
+                    </option>
+
+                    <option>
+                        Snacks
+                    </option>
+
+                    <option>
+                        Special Offers
+                    </option>
+
+                    <option>
+                        Table Reservation
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- Message -->
+
+            <div class="mb-3">
+
+                <label
+                    for="message"
+                    class="form-label">
+
+                    Message
+
+                </label>
+
+
+                <textarea
+                    class="form-control"
+                    id="message"
+                    rows="4"
+                    placeholder="Write your message"></textarea>
+
+            </div>
+
+
+
+            <!-- Submit -->
+
+            <button
+                type="submit"
+                class="btn btn-primary w-100">
+
+                Send Message
+
+            </button>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- FOOTER -->
+    <!-- ================================================= -->
+
+    <footer
+        class="bg-dark text-white text-center p-4">
+
+
+        <h5>
+            BrewNest Cafe
+        </h5>
+
+
+        <p>
+            Fresh Coffee | Fresh Bakery | Great Moments
+        </p>
+
+
+        <p>
+            📍 Chennai, Tamil Nadu
+        </p>
+
+
+        <p>
+            📞 +91 98765 43210
+        </p>
+
+
+        <p>
+            ✉ brewnest@example.com
+        </p>
+
+
+        <hr>
+
+
+        <p class="mb-0">
+
+            © 2026 BrewNest Cafe.
+            All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+
+
+    <!-- ================================================= -->
+    <!-- BOOTSTRAP JAVASCRIPT -->
+    <!-- ================================================= -->
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js">
+    </script>
+
+
 </body>
+
 </html>
