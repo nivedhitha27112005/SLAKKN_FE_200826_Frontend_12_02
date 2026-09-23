@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FrameFit virtual eyewear try-on website">
+  <title>FrameFit - Virtual Eyewear Try-On</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="#home">Frame<span>Fit</span></a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#tryon">Virtual Try-On</a>
+      <a href="#frames">Frames</a>
+      <a href="#face-shapes">Face Shapes</a>
+    </nav>
+    <a class="nav-btn" href="#tryon">Try Now</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">VIRTUAL EYEWEAR EXPERIENCE</p>
+        <h1>Find frames that <span>fit your face.</span></h1>
+        <p class="hero-text">
+          Use your phone camera to preview different spectacles without visiting a shop.
+          Choose a frame, see how it looks, and discover styles that match your face shape.
+        </p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="#tryon">Start Virtual Try-On</a>
+          <a class="secondary-btn" href="#face-shapes">Explore Face Shapes</a>
+        </div>
+        <div class="hero-points">
+          <span>✓ Camera preview</span>
+          <span>✓ Frame selection</span>
+          <span>✓ Face-shape guide</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="phone">
+          <div class="phone-top"></div>
+          <div class="camera-view">
+            <div class="face-placeholder">
+              <div class="ear left"></div><div class="ear right"></div>
+              <div class="head"></div>
+              <div class="glasses-demo"><i></i><i></i></div>
+            </div>
+            <span class="scan-line"></span>
+            <div class="camera-tip">Align your face inside the guide</div>
+          </div>
+        </div>
+        <div class="floating-card">AI-style<br><strong>Frame Preview</strong></div>
+      </div>
+    </section>
+
+    <section class="section" id="tryon">
+      <div class="section-heading">
+        <p class="eyebrow">STEP 01 · TRY IT</p>
+        <h2>Virtual Try-On</h2>
+        <p>Allow camera access, choose a frame, and preview it on your face.</p>
+      </div>
+
+      <div class="tryon-layout">
+        <div class="camera-panel">
+          <video id="camera" autoplay playsinline muted></video>
+          <div class="camera-placeholder" id="cameraPlaceholder">
+            <div class="camera-icon">⌾</div>
+            <h3>Your camera preview</h3>
+            <p>Camera stays on your device. Start it to see your live preview.</p>
+          </div>
+          <div class="face-guide"></div>
+          <img id="overlayFrame" class="overlay-frame" alt="Selected spectacle frame">
+          <div class="camera-status" id="cameraStatus">Camera not started</div>
+          <div class="camera-controls">
+            <button class="primary-btn" id="startCamera">Start Camera</button>
+            <button class="secondary-btn" id="stopCamera">Stop Camera</button>
+          </div>
+        </div>
+
+        <aside class="selection-panel">
+          <div class="selection-head">
+            <div>
+              <p class="eyebrow">SELECTED FRAME</p>
+              <h3 id="selectedName">Classic Black</h3>
+            </div>
+            <span id="selectedType">Rectangle</span>
+          </div>
+          <div class="selected-preview" id="selectedPreview">
+            <img src="assets/images/frames/black-rectangle.svg" alt="Classic Black frame">
+          </div>
+          <p id="selectedDescription">A clean everyday frame with a balanced rectangular shape.</p>
+          <div class="fit-box">
+            <strong>Suggested fit</strong>
+            <span id="fitText">Oval · Round · Heart</span>
+          </div>
+          <a class="primary-btn full" href="#frames">Choose another frame</a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section light" id="frames">
+      <div class="section-heading">
+        <p class="eyebrow">STEP 02 · CHOOSE</p>
+        <h2>Explore Spectacle Frames</h2>
+        <p>Pick a frame below to update the virtual try-on preview.</p>
+      </div>
+      <div class="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="rectangle">Rectangle</button>
+        <button class="filter" data-filter="round">Round</button>
+        <button class="filter" data-filter="cat-eye">Cat-Eye</button>
+        <button class="filter" data-filter="aviator">Aviator</button>
+      </div>
+      <div class="frame-grid" id="frameGrid"></div>
+    </section>
+
+    <section class="section" id="face-shapes">
+      <div class="section-heading">
+        <p class="eyebrow">STEP 03 · DISCOVER</p>
+        <h2>Face Shape Guide</h2>
+        <p>Use these common face-shape categories as a starting point for choosing frames.</p>
+      </div>
+      <div class="shape-grid">
+        <article class="shape-card"><div class="shape oval"></div><h3>Oval</h3><p>Balanced proportions. Many frame shapes can work well.</p></article>
+        <article class="shape-card"><div class="shape round"></div><h3>Round</h3><p>Try rectangular or angular frames for visual contrast.</p></article>
+        <article class="shape-card"><div class="shape square"></div><h3>Square</h3><p>Round or oval frames can soften strong angles.</p></article>
+        <article class="shape-card"><div class="shape heart"></div><h3>Heart</h3><p>Lightweight round, oval, or cat-eye styles can be considered.</p></article>
+      </div>
+    </section>
+
+    <section class="section recommendation">
+      <div>
+        <p class="eyebrow">SMARTER SHOPPING</p>
+        <h2>Compare styles before you buy.</h2>
+        <p>Save the styles you like, compare shapes, and take your shortlist to your favorite eyewear store or online shop.</p>
+      </div>
+      <a class="primary-btn" href="#tryon">Try Frames Now</a>
+    </section>
+  </main>
+
+  <footer>
+    <div><a class="logo" href="#home">Frame<span>Fit</span></a><p>Virtual eyewear try-on concept website.</p></div>
+    <p>© 2026 FrameFit. Demo project.</p>
+  </footer>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
