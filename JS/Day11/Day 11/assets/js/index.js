@@ -18,7 +18,7 @@ console.log(firstAbove30);
 
 // TASK 4
 let students = [
-    { id: 1, name: "Dhanush", mark: 75 },
+    { id: 1, name: "Arun", mark: 75 },
     { id: 2, name: "Priya", mark: 90 },
     { id: 3, name: "Kumar", mark: 65 }
 ];
@@ -28,7 +28,7 @@ console.log(foundStudent);
 
 // TASK 5
 let employees = [
-    { name: "Dhanush", salary: 25000 },
+    { name: "Arun", salary: 25000 },
     { name: "Priya", salary: 45000 },
     { name: "Kumar", salary: 30000 },
     { name: "Ravi", salary: 50000 }
@@ -65,7 +65,7 @@ for (let skill of skills) {
 
 // TASK 10
 let studentInfo = {
-    name: "Dhanush",
+    name: "Arun",
     age: 23,
     course: "JavaScript",
     city: "Chennai"
