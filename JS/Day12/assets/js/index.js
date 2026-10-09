@@ -7,8 +7,8 @@ title.style.fontSize = "30px";
 
 // TASK 2
 let paras = document.getElementsByClassName("para");
-paras[0].style.color = "red";
-paras[1].style.backgroundColor = "yellow";
+paras[0].style.color = "blue";
+paras[1].style.backgroundColor = "orange";
 paras[2].style.fontSize = "25px";
 
 
@@ -24,12 +24,12 @@ link.textContent = "Visit Google";
 
 // TASK 4
 let username = document.getElementById("username");
-username.value = "Dhanush";
+username.value = "Arun";
 
 let email = document.querySelector("#email");
-email.value = "dhanush@gmail.com";
+email.value = "arun@gmail.com";
 
-username.style.backgroundColor = "lightgreen";
+username.style.backgroundColor = "green";
 
 let submitBtn = document.getElementById("submitBtn");
 submitBtn.disabled = true;
@@ -43,8 +43,8 @@ headings[2].textContent = "JavaScript";
 headings[3].textContent = "React";
 headings[4].textContent = "Node.js";
 
-headings[0].style.color = "red";
-headings[1].style.color = "blue";
-headings[2].style.color = "green";
-headings[3].style.color = "orange";
-headings[4].style.color = "purple";
+headings[0].style.color = "pink";
+headings[1].style.color = "darkblue";
+headings[2].style.color = "lightgreen";
+headings[3].style.color = "yellow";
+headings[4].style.color = "red";
